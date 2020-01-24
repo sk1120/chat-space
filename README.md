@@ -8,21 +8,22 @@
 ### Association
 - has_many :posts
 - has_many :groups, through:  :groups_users
+- belongs_to :groups_users
 
 ## groupsテーブル
 |Column|Type|Options|
 |------|----|-------|
-|member|string|null: false|
-|group-name|string|null: false|
+|name|string|null: false|
 ### Association
 - has_many :posts
 - has_many :users, through:  :groups_users
+- belongs_to :groups_users
 
 ## postsテーブル
 |Column|Type|Options|
 |------|----|-------|
 |image|text||
-|text|text|null: false|
+|text|text||
 |user_id|integer|null: false, foreign_key: true|
 |group_id|integer|null: false, foreign_key: true|
 ### Association
