@@ -1,0 +1,27 @@
+.SideBar
+
+  .side-header
+    .side-header__username
+      %p.side-header__name "name"
+      %ul.side-header__menu
+        %li.side-header__new-group
+          = link_to "#", class:"side-header__icon" do
+            .i.fa.fa-edit
+        %li.side-header__edit-user
+          = link_to "#", class:"side-header__icon" do
+            .i.fa.fa-cog
+
+  .group-list
+    .group
+      %p.group__groupname 
+        "groupname"
+      %p.group__new-message
+        "no message"
+
+    .group
+      %p.group__groupname 
+        "groupname"
+      %p.group__new-message
+        "no message"
+
+
