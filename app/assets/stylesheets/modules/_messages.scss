@@ -133,11 +133,13 @@
     background-color: #fafafa;
     height: calc(100vh - 100px - 90px);
     padding: 35px 40px;
+    overflow: scroll;
   }
 
     .message-list {
       margin-bottom: 46px;
       margin-block-end: 46px;
+      
       
         &__info {
           margin-bottom: 12px;
@@ -169,53 +171,77 @@
     height: 90px;
     width: 100%;
     padding: 20px 40px;
-    display: flex;
-    justify-content: space-between;
+    
+    
+  }
+
+    .new_message {
+      display: flex;
+    }
 
     .message-form {
-      height: 90px;
+      height: 100%;
       width: 100%;
-      display: flex;
-      justify-content: space-between;
+      
 
-      .input-message {
+      &__text {
         height: 50px;
         width: 100%;
-        color: #434a54;
-        border-style: none;
-        display: flex;
-        justify-content: space-between;
-        position: relative;
+        // display: flex;
+        // justify-content: space-between;
+        padding: 0 40px 0 10px;
 
-        &__text {
-          height: 50px;
-          width: 100%;
-          display: flex;
-          justify-content: space-between;
-          padding: 0 40px 0 10px;
-        }
-
-        &__image {
-          position: absolute;
-          top: 10px;
-          right: 10px;
-          cursor: pointer;
-
-          &__file {
-            display: none;
-          }         
-        }
-      }
-
-      .submit-btn {
-        height: 50px;
-        padding: 0 30px;
-        margin-left: 15px;
-        background-color: #38aef0;
-        color: white;
-        cursor: pointer;
       }
     }
-  }
+    
+  
+
+        .input-message {
+          // height: 50px;
+          // width: 100%;
+          // color: #434a54;
+          // border-style: none;
+          // display: flex;
+          // justify-content: space-between;
+
+
+          position: relative;
+          width: 100%;
+          // position: relative;
+
+          // &__text {
+          //   height: 50px;
+          //   width: 100%;
+          //   // display: flex;
+          //   // justify-content: space-between;
+          //   padding: 0 40px 0 10px;
+          // }
+
+          &__image {
+            position: absolute;
+            top: 10px;
+            right: 10px;
+            cursor: pointer;
+
+            &__file {
+              display: none;
+            }         
+          }
+        }
+
+  
+
+        .submit-btn {
+          height: 50px;
+          padding: 0 30px;
+          margin-left: 15px;
+          background-color: #38aef0;
+          color: white;
+          cursor: pointer;
+        }
+    
+    
+    
+
 
 
