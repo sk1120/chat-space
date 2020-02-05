@@ -59,11 +59,18 @@
           font-size: 15px;
           margin-bottom: 5px;
           margin-block-end: 5px;
+          color: white;
+          text-decoration: none;
         }
 
         &__new-message {
           font-size: 11px;
+          color: white;
         }
+    }
+
+    a {
+      text-decoration: none;
     }
 
 
